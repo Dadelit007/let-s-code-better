@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+        long long int a[1000003],x,n,fact=1;
+        a[0]=1;
+        for(long long int i=1;i<1000003;i++)
+        { 
+            a[i]=(a[i-1]*i)%(1000003);
+            //cout<<a[i]<<"\n";
+        }
+        long long int t;
+        cin>>t;
+        for(long long int k=0;k<t;k++)
+    {
+        cin>>n>>x;
+        x=x%(1000003);
+        if(n>=1000003)
+        cout<<0<<"\n";
+        else 
+        {
+        long long int z=a[n]*x;
+        cout<<z%(1000003)<<"\n";   
+        }
+    }
+    
+}
