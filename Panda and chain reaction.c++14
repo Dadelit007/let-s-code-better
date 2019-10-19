@@ -2,7 +2,7 @@
 /*In CPP programs you can use both C and CPP style I/O but when you set the ios_base::sync_with_stdio (by default its value is true and synchronization is there, meaning they are sharing same buffers and you will get expected results if you use both C and CPP style I/O) to false it disables the synchronization between the C and C++ standard streams and std::cin becomes faster.
 Now, because scanf() works faster than std::cin(), competitive coders use “ios_base::sync_with_stdio(false);” at the beginning of their main() to get faster input (and it really does make a big difference). Also I would like you to go through these links i provided below, they are from stack overflow.
 */
-#define atulpandey ios_base::sync_with_stdio(NULL);cin.tie(0);cout.tie(0);
+#define prajjwal ios_base::sync_with_stdio(NULL);cin.tie(0);cout.tie(0);
 using namespace std;
 int main()
 {
